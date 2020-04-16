@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web:  /kali/start
+  web:  curl https://raw.githubusercontent.com/anandu467/kali/master/start | sh
