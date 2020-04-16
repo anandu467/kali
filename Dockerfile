@@ -5,6 +5,7 @@ FROM kalilinux/kali-rolling
 
 ENV DEBIAN_FRONTEND noninteractive
 # do APT update
+RUN apt-get -y update && apt install wget git
 RUN wget https://downloads.arachni-scanner.com/nightlies/arachni-2.0dev-1.0dev-linux-x86_64.tar.gz && tar -xf arachni-2.0dev-1.0dev-linux-x86_64.tar.gz &&cd arachni-2.0dev-1.0dev && cp -r * /usr/bin
 RUN cd /home && git clone https://github.com/anandu467/kali && cd kali && chmod +x sshin.py
 RUN cd /home && ls && cd /usr/bin/bin && ls
