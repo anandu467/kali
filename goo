@@ -1,0 +1,7 @@
+apt-get -y install kali-tools-top10 exploitdb man-db dirb nikto wpscan uniscan openssh-server openssl libc-bin
+
+wget https://downloads.arachni-scanner.com/nightlies/arachni-2.0dev-1.0dev-linux-x86_64.tar.gz && tar -xf arachni-2.0dev-1.0dev-linux-x86_64.tar.gz &&cd arachni-2.0dev-1.0dev && cp -r * /usr/bin
+cd /home && git clone https://github.com/anandu467/kali && cd kali && chmod +x sshin.py
+cd && ls && cd /usr/bin/bin && ls
+useradd -p $(openssl passwd -1 nana1122) shadowx
+service postgresql start && msfdb init && service postgresql stop
