@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web:  /bin/bash /home/kali/start
+  web:  /home/kali/start
