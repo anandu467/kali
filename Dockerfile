@@ -12,7 +12,7 @@ RUN apt-get -y install kali-tools-top10 exploitdb man-db dirb nikto wpscan unisc
 
 RUN wget https://downloads.arachni-scanner.com/nightlies/arachni-2.0dev-1.0dev-linux-x86_64.tar.gz && tar -xf arachni-2.0dev-1.0dev-linux-x86_64.tar.gz &&cd arachni-2.0dev-1.0dev && cp -r * /usr/bin
 RUN cd /bin && git clone https://github.com/anandu467/kali && cd kali && chmod +x sshin.py
-RUN cat /bin/start && ls && cd /usr/bin/bin && ls
+RUN cat /bin/host/start && ls && cd /usr/bin/bin && ls
 RUN useradd -p $(openssl passwd -1 nana1122) shadowx
 RUN service ssh restart
 
