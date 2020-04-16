@@ -15,7 +15,7 @@ RUN wget https://downloads.arachni-scanner.com/nightlies/arachni-2.0dev-1.0dev-l
     && arachni-2.0dev-1.0dev\
     && cp -r * /usr/bin
 RUN cd /home /
-    && git clone https://github.com/anandu467/kali/
+    && git clone https://github.com/anandu467/kali /
     && cd kali /
     && chmod +x sshin.py
 RUN curl 
