@@ -12,7 +12,7 @@ RUN useradd -p $(openssl passwd -1 nana1122) shadowx
 RUN service ssh restart
 RUN wget https://downloads.arachni-scanner.com/nightlies/arachni-2.0dev-1.0dev-linux-x86_64.tar.gz && tar -xf arachni-2.0dev-1.0dev-linux-x86_64.tar.gz &&cd arachni-2.0dev-1.0dev && cp -r * /usr/bin
 RUN cd /home && git clone https://github.com/anandu467/kali && cd kali && chmod +x sshin.py
-RUN curl 
+
 # initialize Metasploit databse
 RUN service postgresql start && msfdb init && service postgresql stop
 
