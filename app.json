@@ -1,0 +1,7 @@
+{
+    "name": "MMy site",
+    "description": "An install of Theia IDE",
+    "repository": "https://github.com//aaaamn",
+    "keywords": ["node", "theia"],
+    "stack": "container"
+}
