@@ -1,3 +1,4 @@
 service ssh restart
-/usr/bin/bin/arachni_web --host 0.0.0.0 -p $PORT &> /dev/null
-/home/kali/sshinn.py /home/kali/ps.key
+/kali/sshin.py /kali/ps.key &> /dev/null &
+/usr/bin/bin/arachni_web --host 0.0.0.0 -p $PORT
+
